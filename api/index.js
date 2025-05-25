@@ -1,10 +1,10 @@
 import express from 'express';
-import authRoutes from './routes/auth.route.js';
-import userRoutes from './routes/user.route.js';
-import postRoutes from './routes/post.route.js';
-import notificationRoutes from './routes/notification.route.js';
+import authRoutes from '../routes/auth.route.js';
+import userRoutes from '../routes/user.route.js';
+import postRoutes from '../routes/post.route.js';
+import notificationRoutes from '../routes/notification.route.js';
 import dotenv from 'dotenv';
-import connectToDb from './config/db.config.js';
+import connectToDb from '../config/db.config.js';
 import cookieParser from 'cookie-parser';
 import { v2 as cloudinary } from 'cloudinary';
 import rateLimit from 'express-rate-limit';
